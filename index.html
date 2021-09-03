@@ -1,0 +1,685 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Mê Phim - Kho phim lớn nhất Việt Nam</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+<body>
+    <div id="head">
+        <h3> <a href="#">MêPhim</a> </h3>
+        <ul class="main-menu">
+            <li class="first-menu"> <a class="main-choice" href="#">Trang chủ</a> </li>
+            <li id="pb" class="first-menu"> <a class="main-choice" href="#">Phim bộ</a> 
+                <div class="phimbo">
+                    <ul class="root-choice1">
+                        <h5 style="color: pink;">Quốc gia</h5>
+                        <hr>
+                        <li class="first-menu-qg"> <a href="">Mỹ</a> </li>
+                        <li class="first-menu-qg"> <a href="">Trung Quốc</a> </li>
+                        <li class="first-menu-qg"> <a href="">Hồng Kông</a> </li>
+                        <li class="first-menu-qg"> <a href="">Hàn Quốc</a> </li>
+                        <li class="first-menu-qg"> <a href="">Thái Lan</a> </li>
+                    </ul>
+
+                    <ul class="root-choice2">
+                        <h5 style="color: pink;">Thể loại</h5>
+                        <hr>
+                        <ul class="tl1">
+                            <li class="first-menu-tl1"> <a href="">Âm nhạc</a> </li>
+                            <li class="first-menu-tl1"> <a href="">Anime</a> </li>
+                            <li class="first-menu-tl1"> <a href="">Tài liệu</a> </li>
+                            <li class="first-menu-tl1"> <a href="">Thể thao</a> </li>
+                            <li class="first-menu-tl1"> <a href="">Gia đình</a> </li>
+                            <li class="first-menu-tl1"> <a href="">Học đường</a> </li>
+                            <li class="first-menu-tl1"> <a href="">Lịch sử</a> </li>
+                            <li class="first-menu-tl1"> <a href="">Kiếm hiệp</a> </li>
+                            <li class="first-menu-tl1"> <a href="">Chiến tranh</a> </li>
+                            <li class="first-menu-tl1"> <a href="">Hình sự</a> </li>
+                            <li class="first-menu-tl1"> <a href="">Truyền hình</a> </li>
+                        </ul>
+                        <ul class="tl2">
+                            <li class="first-menu-tl2"> <a href="">Cổ trang</a> </li>
+                            <li class="first-menu-tl2"> <a href="">Thần thoại</a> </li>
+                            <li class="first-menu-tl2"> <a href="">Viễn tưởng</a> </li>
+                            <li class="first-menu-tl2"> <a href="">Tâm lý</a> </li>
+                            <li class="first-menu-tl2"> <a href="">Hài hước</a> </li>
+                            <li class="first-menu-tl2"> <a href="">Võ thuật</a> </li>
+                            <li class="first-menu-tl2"> <a href="">Hoạt hình</a> </li>
+                            <li class="first-menu-tl2"> <a href="">Tình cảm</a> </li>
+                            <li class="first-menu-tl2"> <a href="">Kinh dị</a> </li>
+                            <li class="first-menu-tl2"> <a href="">Phiêu lưu</a> </li>
+                            <li class="first-menu-tl2"> <a href="">Hành động</a> </li>
+                        </ul>
+                    </ul>
+
+                    <ul class="root-choice3">
+                        <h5 style="color: pink;">Xu hướng</h5>
+                        <hr>
+                        <li class="first-menu-rank">  <a href="">Phim mới nhất</a> </li>
+                        <li class="first-menu-rank"> <a href="">Phim được xem nhiều nhất</a> </li>
+                    </ul>
+                </div>
+            
+            </li>
+            <li id="pl" class="first-menu"> <a class="main-choice" href="#">Phim lẻ</a>
+                <div class="phimle">
+                    <ul class="pl-menu">
+                        <li class="first-pl-menu"> <a href="">Mới nhất</a> </li>
+                        <li class="first-pl-menu"> <a href="">Chiếu rạp</a> </li>
+                    </ul>
+                </div>
+            </li>
+            <li id="anime" class="first-menu"> <a class="main-choice" href="#">Phim hoạt hình</a> 
+                <div class="anime">
+                    <ul class="anime-menu">
+                        <li class="first-anime-menu"> <a href="">Hoạt hình Nhật Bản</a> </li>
+                        <li class="first-anime-menu"> <a href="">Hoạt hình Trung Quốc</a> </li>
+                    </ul>
+                </div>
+            
+            </li>
+            
+            <li class="first-menu"> <a class="main-choice" href="#">Bảng xếp hạng</a> </li>
+        </ul>
+        <input type="text" placeholder="Tìm phim">
+        <button type="submit">Tìm kiếm</button>
+    </div>
+        <i class="fas fa-chevron-right next"></i>
+        <i class="fas fa-chevron-left prev"></i>
+        <div class="banner">
+            <div class="post"> 
+                <p class="descrip">Xem Triệu Lộ Tư xênh đệp nè</p>
+                <a class="ep" href="">Trọn bộ 20 tập</a>
+                <a class="title" href="">Thiên Thiên Trong Lời Đồn</a>
+                <a href="">
+                    <img src="img/tigernrose.jpg" alt="">
+                </a>
+                
+            </div>
+            <div class="post"> 
+                <p class="descrip">Dẫn êm đi xem bướm</p>
+                <a class="ep" href="">Trọn bộ 20 tập</a>
+                <a class="title" href="">Dẫu Biết</a>
+                <a href="">
+                    <img src="img/nevertheless-poster.jpeg" alt="">
+                </a>
+            </div>
+            <div class="post"> 
+                <p class="descrip">Năm 17 tuổi êm đi lấy chông</p>
+                <a class="ep" href="">Trọn bộ 20 tập</a>
+                <a class="title" href="">Still 17</a>
+                <a href="">
+                    <img src="img/Still-17-poster-korean-drama-review-1.jpg" alt="">
+                </a>
+            </div>
+            <div class="post"> 
+                <p class="descrip">Mãi mãi là bao lâu</p>
+                <a class="ep" href="">Trọn bộ 20 tập</a>
+                <a class="title" href="">Hậu Duệ Mặt Trời</a>
+                <a href="">
+                    <img src="img/desofthesun.jpg" alt="">
+                </a>
+            </div>
+            <div class="post"> 
+                <p class="descrip">Về nhà anh là cá con</p>
+                <a class="ep" href="">Trọn bộ 20 tập</a>
+                <a class="title" href="">Vincenzo</a>
+                <a href="">
+                    <img src="img/vincenzo-1200b.jpg" alt="">
+                </a>
+            </div>
+            <div class="post"> 
+                <p class="descrip">Có chồng là thần rồng</p>
+                <div class="vie"><a class="ep" href="">Trọn bộ 20 tập</a></div>
+                <div class="el"><a class="title" href="">Ngọa Long</a></div>
+                <a href="">
+                    <img src="img//missthedra.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-9">
+
+
+            <div class="decu">
+                <h3>PHIM ĐỀ CỬ</h3>
+                <i class="fas fa-chevron-right next-dc"></i>
+                <i class="fas fa-chevron-left prev-dc"></i>
+                <div class="decu-slide decu-slide-tong">
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Dẫu Biết</a></div>
+                        <div class="el"><a class="eng" href="">Nevertheless</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/daubiet.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Vincenzo</a></div>
+                        <div class="el"><a class="eng" href="">Vincenzo</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/Vincenzo-small.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Êm Đệp Nhất Khi Cười</a></div>
+                        <div class="el"><a class="eng" href="">Falling into your smile</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/smile.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Phiêu Lưu Ký</a></div>
+                        <div class="el"><a class="eng" href="">Journey</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/chrispatt.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Chuột</a></div>
+                        <div class="el"><a class="eng" href="">Mouse</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/mouse.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Thẩm Phán Ác Ma</a></div>
+                        <div class="el"><a class="eng" href="">Demon Judge</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/demon-judge.png" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Khởi Nghiệp</a></div>
+                        <div class="el"><a class="eng" href="">Start-Up</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/startup.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Bữa Tiệc</a></div>
+                        <div class="el"><a class="eng" href="">The witch</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/witch.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+
+            <div class="decu">
+                <h3>PHIM LẺ MỚI CẬP NHẬT</h3>
+                <i class="fas fa-chevron-right next-dc1"></i>
+                <i class="fas fa-chevron-left prev-dc1"></i>
+                <div class="decu-slide1 decu-slide-tong">
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Thỏ Peter</a></div>
+                        <div class="el"><a class="eng" href="">Peter Rabbit</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/peter.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">F9</a></div>
+                        <div class="el"><a class="eng" href="">Fast Fiction</a></div>
+                        <a href="">
+                            <img src="img/small/F9-2021.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">James James James</a></div>
+                        <div class="el"><a class="eng" href="">Jam</a></div>
+                        <a href="">
+                            <img src="img/small/jam.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Phiêu Lưu Rừng Xanh</a></div>
+                        <div class="el"><a class="eng" href="">Jungle Cruise</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/jungle cruise.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Ninja</a></div>
+                        <div class="el"><a class="eng" href="">Kenshin</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/rurou.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Biệt Đội</a></div>
+                        <div class="el"><a class="eng" href="">Suicide Squad</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/squad.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">FPS</a></div>
+                        <div class="el"><a class="eng" href="">Chrispatt</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/chrispatt.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Vivo</a></div>
+                        <div class="el"><a class="eng" href="">Vivo</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/vivo.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="decu">
+                <h3>PHIM BỘ MỚI CẬP NHẬT</h3>
+                <i class="fas fa-chevron-right next-dc2"></i>
+                <i class="fas fa-chevron-left prev-dc2"></i>
+                <div class="decu-slide2 decu-slide-tong">
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Tôi Yêu Mục Tiêu Của Tôi</a></div>
+                        <div class="el"><a class="eng" href="">Hitman In Love</a></div>
+                        
+                        
+                        <a href="">
+                            <img src="img/small/hitmaninlove.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Chàng Phải Cưới Ta</a></div>
+                        <div class="el"><a class="eng" href="">Honey, Don't Run Away</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/honey.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Tân Thiên Long Bát Bộ</a></div>
+                        <div class="el"><a class="eng" href="">Demi-Gods And Semi-Devils</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/thienlongbatbo.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Bác Sĩ Thiên Tài</a></div>
+                        <div class="el"><a class="eng" href="">The Good Doctors</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/gooddoc.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Thử Thách Thần Thượng</a></div>
+                        <div class="el"><a class="eng" href="">Running Man</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/rm.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Thẩm Phán Ác Ma</a></div>
+                        <div class="el"><a class="eng" href="">Demon Judge</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/demon-judge.png" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Linh Mục Nhiệt Huyết</a></div>
+                        <div class="el"><a class="eng" href="">The Fiery Priest</a></div>
+                        
+                        
+                        <a href="">
+                            <img src="img/small/linhmucnhiethuyet.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Dữ Quân Ca</a></div>
+                        <div class="el"><a class="eng" href="">Dream Of Chang'an</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/dreamofchangan.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="decu">
+                <h3>PHIM HOẠT HÌNH</h3>
+                <i class="fas fa-chevron-right next-dc3"></i>
+                <i class="fas fa-chevron-left prev-dc3"></i>
+                <div class="decu-slide3 decu-slide-tong">
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Quyến Tư Lượng</a></div>
+                        <div class="el"><a class="eng" href="">The Island Of Siliang</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/island.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Fate/Order: Bí Mật Căn Phòng Tối</a></div>
+                        <div class="el"><a class="eng" href="">Fate/Order: Moonlight/Lostroom</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/fateorder.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Vạn Giới Tiên Tung</a></div>
+                        <div class="el"><a class="eng" href="">Van Gioi Tien Tung</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/vangioitientung.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Vô Thượng Thần Đế</a></div>
+                        <div class="el"><a class="eng" href="">Vo Thuong Than De</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/vothuongthande.png" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Độc Bộ Tiêu Dao</a></div>
+                        <div class="el"><a class="eng" href="">Doc Bo Tieu Dao</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/docbotieudao.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Chào Mừng Cậu Đến Trường Iruma-Kun</a></div>
+                        <div class="el"><a class="eng" href="">Mairimashita! Iruma-Kun</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/welcome.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Hóa Kiếp Trở Thành Otome</a></div>
+                        <div class="el"><a class="eng" href="">Otome Game</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/game.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="decu-post">
+                        <div class="vie"><a class="vn" href="">Công Tước Chết Chóc Và Cô Hầu Gái Của Cậu</a></div>
+                        <div class="el"><a class="eng" href="">Duke</a></div>
+                        
+                        <a href="">
+                            <img src="img/small/duke.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+        <div class="content-sugg">
+            <div class="above">
+                <h5>Quan Tâm Nhiều Nhất</h5>
+
+                <div class="above-choice">
+                <h6 id="root" class="choice-mul">Phim bộ</h6>
+                <h6 id="child1" class="choice-mul">Phim lẻ</h6>
+                <h6 id="child2" class="choice-mul">Hoạt hình</h6>
+                </div>
+
+                <div id="phb">
+                    <div class="coming">
+                        <h4 class="coming-fl num">1</h4>
+                        <a class="coming-fl imag" href="">
+                            <img src="img/small/lovers-of-the-red-sky-giai-ma-dinh-menh-bi-an-lam-kim-yoo-jung---ahn-hyo-seop-cuon-chat-lay-nhau-8f4-5956276.jpg" alt="">
+                        </a>
+                        <a class="coming-fl t_vn" href="">Lover</a>
+                        <a class="coming-fl t_eng" href="">Lover</a>
+                    </div>
+    
+                    <hr>
+
+                    <div class="coming">
+                        <h4 class="coming-fl num">2</h4>
+                        <a class="coming-fl imag" href="">
+                            <img src="img/small/daubiet - Copy.jpg" alt="">
+                        </a>
+                        <a class="coming-fl t_vn" href="">Dẫu Biết</a>
+                        <a class="coming-fl t_eng" href="">Nevertheless</a>
+                    </div>
+    
+                    <hr>
+
+                    <div class="coming">
+                        <h4 class="coming-fl num">3</h4>
+                        <a class="coming-fl imag" href="">
+                            <img src="img/small/honey - Copy.jpg" alt="">
+                        </a>
+                        <a class="coming-fl t_vn" href="">Chàng phải cưới ta</a>
+                        <a class="coming-fl t_eng" href="">Honey</a>
+                    </div>
+    
+                </div>
+
+                <div id="phl">
+                    
+                    <div class="hot">
+                        <h4 class="hot-fl num">1</h4>
+                        <a class="hot-fl imag" href="">
+                            <img src="img/small/jungle cruise - Copy.jpg" alt="">
+                        </a>
+                        <a class="hot-fl t_vn" href="">Rừng xanh</a>
+                        <a class="hot-fl t_eng" href="">Jungle Cruise</a>
+                    </div>
+    
+                    <hr>
+
+                    <div class="hot">
+                        <h4 class="hot-fl num">2</h4>
+                        <a class="hot-fl imag" href="">
+                            <img src="img/small/squad - Copy.jpg" alt="">
+                        </a>
+                        <a class="hot-fl t_vn" href="">Biệt Đội</a>
+                        <a class="hot-fl t_eng" href="">Squad</a>
+                    </div>
+    
+                    <hr>
+
+                    <div class="hot">
+                        <h4 class="hot-fl num">3</h4>
+                        <a class="hot-fl imag" href="">
+                            <img src="img/small/jam - Copy.jpg" alt="">
+                        </a>
+                        <a class="hot-fl t_vn" href="">Jam Jam Jam</a>
+                        <a class="hot-fl t_eng" href="">James</a>
+                    </div>
+
+                </div>
+
+                <div id="phhoathinh">
+                    
+                    <div class="hot">
+                        <h4 class="hot-fl num">1</h4>
+                        <a class="hot-fl imag" href="">
+                            <img src="img/small/fateorder - Copy.jpg" alt="">
+                        </a>
+                        <a class="hot-fl t_vn" href="">Fate</a>
+                        <a class="hot-fl t_eng" href="">Fate</a>
+                    </div>
+    
+                    <hr>
+
+                    <div class="hot">
+                        <h4 class="hot-fl num">2</h4>
+                        <a class="hot-fl imag" href="">
+                            <img src="img/small/duke - Copy.jpg" alt="">
+                        </a>
+                        <a class="hot-fl t_vn" href="">Duke</a>
+                        <a class="hot-fl t_eng" href="">Duke</a>
+                    </div>
+    
+                    <hr>
+
+                    <div class="hot">
+                        <h4 class="hot-fl num">3</h4>
+                        <a class="hot-fl imag" href="">
+                            <img src="img/small/game - Copy.jpg" alt="">
+                        </a>
+                        <a class="hot-fl t_vn" href="">Game</a>
+                        <a class="hot-fl t_eng" href="">Game</a>
+                    </div>
+
+                </div>
+                    
+                
+                
+        
+                    
+                
+            </div>
+            <div class="below">
+                <h5>Phim Sắp Chiếu</h5>
+                <hr>
+                <div class="coming">
+                    <h4 class="coming-fl num">1</h4>
+                    <a class="coming-fl imag" href="">
+                        <img src="img/small/9PnR3e1.jpg" alt="">
+                    </a>
+                    <a class="coming-fl t_vn" href="">Ma Thổi Đèn</a>
+                    <a class="coming-fl t_eng" href="">Candle In The Tomb</a>
+                </div>
+
+                <hr>
+
+                <div class="coming">
+                    <h4 class="coming-fl num">2</h4>
+                    <a class="coming-fl imag" href="">
+                        <img src="img/small/Ba-Ngay-Va-Mot-Doi-Three-Days-and-a-Life-2019-poster.jpg" alt="">
+                    </a>
+                    <a class="coming-fl t_vn" href="">Ba Ngày Và Một Đời</a>
+                    <a class="coming-fl t_eng" href="">Three Days And A Life</a>
+                </div>
+
+                <hr>
+
+                <div class="coming">
+                    <h4 class="coming-fl num">3</h4>
+                    <a class="coming-fl imag" href="">
+                        <img src="img/small/lovers-of-the-red-sky-giai-ma-dinh-menh-bi-an-lam-kim-yoo-jung---ahn-hyo-seop-cuon-chat-lay-nhau-8f4-5956276.jpg" alt="">
+                    </a>
+                    <a class="coming-fl t_vn" href="">Tình Yêu</a>
+                    <a class="coming-fl t_eng" href="">Lover</a>
+                </div>
+
+                <hr>
+
+                <div class="coming">
+                    <h4 class="coming-fl num">4</h4>
+                    <a class="coming-fl imag" href="">
+                        <img src="img/small/that-lac.png" alt="">
+                    </a>
+                    <a class="coming-fl t_vn" href="">Thất Lạc</a>
+                    <a class="coming-fl t_eng" href="">Lost</a>
+                </div>
+
+                <hr>
+
+                <div class="coming">
+                    <h4 class="coming-fl num">5</h4>
+                    <a class="coming-fl imag" href="">
+                        <img src="img/small/nua-hiep-co-tri-9294.jpg" alt="">
+                    </a>
+                    <a class="coming-fl t_vn" href="">Nửa Hiệp Cô Tri</a>
+                    <a class="coming-fl t_eng" href="">1/2</a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    
+    <div class="footer">
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $('.banner').slick({
+            slideToShow: 1,
+            slideToScroll: 1,
+            autoplay:true,
+            autoplaySpeed:2000,
+            nextArrow:$('.next'),
+            prevArrow:$('.prev'),
+        });
+        $('.decu-slide').slick({
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            nextArrow:$('.next-dc'),
+            prevArrow:$('.prev-dc'),
+        });
+        $('.decu-slide1').slick({
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            nextArrow:$('.next-dc1'),
+            prevArrow:$('.prev-dc1'),
+        });
+        $('.decu-slide2').slick({
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            nextArrow:$('.next-dc2'),
+            prevArrow:$('.prev-dc2'),
+        });
+        $('.decu-slide3').slick({
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            nextArrow:$('.next-dc3'),
+            prevArrow:$('.prev-dc3'),
+        });
+
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

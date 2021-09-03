@@ -1,0 +1,719 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgba(0, 0, 0, 0.938);
+}
+#head {
+    width: 100%;
+    height: 60px;
+    background: pink;
+}
+#head h3 {
+    width: fit-content;
+    position: relative;
+    float: left;
+    left: 200px;
+}
+#head h3 a {
+    text-decoration: none;
+    line-height: 55px;
+    color: black;
+}
+#head ul.main-menu {
+    width: fit-content;
+    position: absolute;
+    left: 300px;
+}
+#head ul.main-menu li.first-menu  {
+    float: left;
+    list-style: none;
+    margin-left: 30px;
+}
+#head ul.main-menu li.first-menu:hover  {
+    border-bottom: 2px solid white;
+}
+#head ul.main-menu li.first-menu a.main-choice {
+    text-decoration: none;
+    color: white;
+    line-height: 57px;
+}
+button {
+    position: absolute;
+    right: 200px;
+    margin-top: 16px;
+}
+input {
+    position: absolute;
+    right: 270px;
+    margin-top: 16px;
+}
+
+
+
+
+
+.phimbo {
+    display: none;
+    margin-top: 5px;
+    width: 630px;
+    height: 400px;
+    border: 2px solid black;
+    background-color: rgba(22, 21, 21, 0.89);
+    position: absolute;
+    z-index: 1;
+    border-radius: 6px;
+}
+.phimbo ul {
+    float: left;
+    
+}
+.phimbo ul.root-choice2 h5 {
+    margin-left: 31px;
+}
+.phimbo ul.root-choice2 hr {
+    margin-left: 31px;
+}
+.phimbo li {
+    list-style: none;
+}
+.phimbo li a {
+    text-decoration: none;
+    color: white;
+    
+}
+.phimbo li:hover {
+    background-color: pink;
+}
+#pb:hover .phimbo {
+    display: block;
+    z-index: 1;
+}
+
+.phimle {
+    display: none;
+    margin-top: 5px;
+    width: 100px;
+    height: 60px;
+    border: 2px solid black;
+    background-color: rgba(22, 21, 21, 0.89);
+    position: absolute;
+    z-index: 1;
+    border-radius: 6px;
+
+}
+.phimle ul {
+    list-style: none;
+    padding-left: 0px;
+}
+.phimle ul li.first-pl-menu a {
+    color: white;
+    text-decoration: none;
+}
+.phimle ul li.first-pl-menu:hover {
+    background-color: pink;
+}
+#pl:hover .phimle {
+    display: block;
+    z-index: 1;
+}
+
+.anime {
+    display: none;
+    margin-top: 5px;
+    width: 200px;
+    height: 60px;
+    border: 2px solid black;
+    background-color: rgba(22, 21, 21, 0.89);
+    position: absolute;
+    z-index: 1;
+    border-radius: 6px;
+}
+.anime ul {
+    list-style: none;
+    padding-left: 0px;
+}
+.anime ul li.first-anime-menu a {
+    color: white;
+    text-decoration: none;
+}
+.anime ul li.first-anime-menu:hover {
+    background-color: pink;
+}
+#anime:hover .anime {
+    display: block;
+    z-index: 1;
+}
+
+
+
+.content {
+    height: 1600px;
+    margin-top: 30px;
+    position: relative;
+}
+.content-9 {
+    width: 690px;
+    height: 1500px;
+    background-color: rgba(22, 21, 21, 0.89);
+    margin-left: 200px;
+    position: absolute;
+}
+.content-sugg {
+    width: 350px;
+    height: 1600px;
+    position: absolute;
+    margin-left: 930px;
+}
+.footer {
+    margin-top: 30px;
+    height: 250px;
+    border: 2px solid black;
+}
+
+.banner {
+    margin-left: 200px;
+    width: 1080px;
+    height: 500px;
+    position: relative;
+}
+.prev {
+    font-size: 60px;
+    margin-top: 220px;
+    left: 200px;
+    z-index: 1;
+    position: absolute;
+    cursor: pointer;
+}
+.next {
+    font-size: 60px;
+    margin-top: 220px;
+    right: 199px;
+    z-index: 1;
+    position: absolute;
+    cursor: pointer;
+}
+
+.banner .post a.ep {
+    font-size: smaller;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 40px;
+    color: black;
+    background-color: white;
+    border-radius: 1px;
+}
+.banner .post a.title {
+    font-size: 50px;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 40px;
+    color: white;
+}
+.descrip {
+    font-size: 15px;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 50px;
+    color: white;
+}
+.banner:hover p.descrip {
+    margin-top: 468px;
+}
+.banner:hover .post a.ep {
+    margin-top: 380px;
+}
+.banner:hover .post a.title {
+    margin-top: 400px;
+}
+
+
+.decu h3 {
+    margin-top: 5px;
+    margin-left: 5px;
+    color: white;
+}
+.decu-slide-tong {
+    width: 690px;
+    height: 290px;
+    position: relative;
+    padding-left: 9px;
+}
+.next-dc {
+    position: absolute;
+    margin-top: 90px;
+    font-size: 50px;
+    color: gray;
+    z-index: 1;
+    opacity: 0.6;
+    right: 6px;
+    cursor: pointer;
+}
+.prev-dc {
+    position: absolute;
+    margin-top: 90px;
+    font-size: 50px;
+    color: gray;
+    z-index: 1;
+    opacity: 0.6;
+    left: 6px;
+    cursor: pointer;
+}
+.next-dc1 {
+    position: absolute;
+    margin-top: 90px;
+    font-size: 50px;
+    color: gray;
+    z-index: 1;
+    opacity: 0.6;
+    right: 6px;
+    cursor: pointer;
+}
+.prev-dc1 {
+    position: absolute;
+    margin-top: 90px;
+    font-size: 50px;
+    color: gray;
+    z-index: 1;
+    opacity: 0.6;
+    left: 6px;
+    cursor: pointer;
+}
+.next-dc2 {
+    position: absolute;
+    margin-top: 90px;
+    font-size: 50px;
+    color: gray;
+    z-index: 1;
+    opacity: 0.6;
+    right: 6px;
+    cursor: pointer;
+}
+.prev-dc2 {
+    position: absolute;
+    margin-top: 90px;
+    font-size: 50px;
+    color: gray;
+    z-index: 1;
+    opacity: 0.6;
+    left: 6px;
+    cursor: pointer;
+}
+.next-dc3 {
+    position: absolute;
+    margin-top: 90px;
+    font-size: 50px;
+    color: gray;
+    z-index: 1;
+    opacity: 0.6;
+    right: 6px;
+    cursor: pointer;
+}
+.prev-dc3 {
+    position: absolute;
+    margin-top: 90px;
+    font-size: 50px;
+    color: gray;
+    z-index: 1;
+    opacity: 0.6;
+    left: 6px;
+    cursor: pointer;
+}
+
+.decu-slide-tong .decu-post .vie {
+    width: 160;
+    margin-top: 235px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    
+}
+.decu-slide-tong .decu-post .el {
+    width: 160;
+    margin-top: 247px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    
+}
+.decu-slide-tong .decu-post a.vn {
+    text-decoration: none;
+    font-size: small;
+    color: pink;
+}
+.decu-slide-tong .decu-post a.eng {
+    text-decoration: none;
+    font-size: small;
+    color: gray;
+}
+
+
+
+
+
+.above {
+    width: 350px;
+    height: 600px;
+    background-color: rgba(22, 21, 21, 0.89);
+    position: absolute;
+}
+.above h5 {
+    margin-top: 5px;
+    margin-left: 10px;
+    color: white;
+}
+
+
+.choice-mul {
+    float: left;
+}
+.above-choice {
+    width: 100%;
+    height: 32px;
+    position: relative;
+}
+h6 {
+    cursor: pointer;
+    border-right: 1px solid black;
+    width: 33.33333333333333333%;
+    background-color: pink;
+    padding: 6px 0 6px 0;
+    text-align: center;
+}
+h6#root {
+    background: white;
+}
+.above #phb {
+    width: 350px;
+    height: 536px;
+    position: absolute;
+    background-color: rgba(22, 21, 21, 0.89);
+    display: block;
+}
+.above #phl {
+    width: 350px;
+    height: 536px;
+    
+    background-color: yrgba(22, 21, 21, 0.89);
+    position: absolute;
+    display: none;
+}
+.above #phhoathinh {
+    width: 350px;
+    height: 536px;
+    position: absolute;
+    background-color: rgba(22, 21, 21, 0.89);
+    display: none;
+}
+
+
+
+.below {
+    width: 350px;
+    height: 900px;
+    background-color: rgba(22, 21, 21, 0.89);
+    position: absolute;
+    margin-top: 650px;
+}
+.below h5 {
+    margin-top: 5px;
+    margin-left: 10px;
+    color: white;
+}
+
+.coming {
+    width: 350px;
+    height: 132px;
+}
+.coming .coming-fl {
+    float: left;
+}
+
+.num {
+    margin-left: 10px;
+    color: white;
+}
+.imag img {
+    margin-left: 10px;
+}
+.t_vn {
+    margin-left: 10px;
+    position: absolute;
+    text-decoration: none;
+    color: pink;
+}
+.t_eng {
+    margin-left: 10px;
+    position: absolute;
+    text-decoration: none;
+    color: gray;
+    margin-top: 20px;
+}
+
+.hot {
+    width: 350px;
+    height: 132px;
+}
+.hot .hot-fl {
+    float: left;
+}
+
+@media only screen and (max-width: 700px) {
+    #head h3 {
+        left: 0px;
+    }
+    
+    .main-menu {
+        display: none;
+    }
+    input {
+        display: none;
+    }
+    button {
+        display: none;
+    }
+    .banner {
+        margin-left: 0px;
+        width: 100%;
+        height: 30%;
+        position: relative;
+    }
+    #head h3 {
+        float:none;
+    }
+    .next {
+        margin-top: 11vh;
+        right: 0px;
+        font-size: 40px
+    }
+    .prev {
+        margin-top: 11vh;
+        left: 0px;
+        font-size: 40px
+    }
+    .banner .post a img {
+        width: 100%;
+        height: 120%;
+    }
+    .banner .post a.ep {
+        font-size: 10px;
+        text-decoration: none;
+        margin-top: 21vh;
+        
+        color: black;
+        background-color: white;
+        border-radius: 1px;
+        position: absolute;
+    }
+    .banner .post a.title {
+        font-size: 20px;
+        text-decoration: none;
+        margin-top: 23vh;
+        color: white;
+        position: absolute;
+    }
+
+    .content-9 {
+        width: 100%;
+        overflow: hidden;
+        margin-left: 0px;
+        position: relative;
+    }
+    .content-sugg {
+        width: 100%;
+        margin-left: 0px;
+        position: relative;
+    }
+    .footer {
+        margin-top: 1500px;
+        position: relative;
+    }
+    .above {
+        width: 100%;
+    }
+    .above .pb {
+        width: 100%;
+    }
+    .below {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+    #head h3 {
+        left: 0px;
+    }
+    
+    .main-menu {
+        display: none;
+    }
+    input {
+        display: none;
+    }
+    button {
+        display: none;
+    }
+    .banner {
+        margin-left: 5%;
+        width: 90%;
+        height: 30%;
+        position: relative;
+    }
+    #head h3 {
+        float:none;
+    }
+    .next {
+        margin-top: 11vh;
+        right: 42px;
+        font-size: 60px
+    }
+    .prev {
+        margin-top: 11vh;
+        left: 35px;
+        font-size: 60px
+    }
+    .banner .post a img {
+        width: 100%;
+        height: 120%;
+    }
+    .banner .post a.ep {
+        font-size: 20px;
+        text-decoration: none;
+        margin-top: 21vh;
+        
+        color: black;
+        background-color: white;
+        border-radius: 1px;
+        position: absolute;
+    }
+    .banner .post a.title {
+        font-size: 40px;
+        text-decoration: none;
+        margin-top: 23vh;
+        color: white;
+        position: absolute;
+    }
+
+    .content-9 {
+        width: 90%;
+        overflow: hidden;
+        margin-left: 5%;
+        position: relative;
+    }
+    .content-sugg {
+        width: 90%;
+        margin-left: 5%;
+        position: relative;
+    }
+    .footer {
+        margin-top: 1500px;
+        position: relative;
+    }
+    .above {
+        width: 100%;
+    }
+    .above .pb {
+        width: 100%;
+    }
+    .below {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1000px) (max-width: 1250px) {
+    #head {
+        height: 100px;
+    }
+    #head h3 {
+        left: 0px;
+        font-size: 60px;
+        padding-top: 20px;
+    }
+    
+    .main-menu {
+        display: none;
+    }
+    input {
+        display: none;
+    }
+    button {
+        display: none;
+    }
+    .banner {
+        margin-left: 5%;
+        width: 90%;
+        height: 30%;
+        position: relative;
+    }
+    #head h3 {
+        float:none;
+    }
+    .next {
+        margin-top: 11vh;
+        right: 50px;
+        font-size: 90px
+    }
+    .prev {
+        margin-top: 11vh;
+        left: 48px;
+        font-size: 90px
+    }
+    .banner .post a img {
+        width: 100%;
+        height: 120%;
+    }
+    .banner .post a.ep {
+        font-size: 20px;
+        text-decoration: none;
+        margin-top: 21vh;
+        
+        color: black;
+        background-color: white;
+        border-radius: 1px;
+        position: absolute;
+    }
+    .banner .post a.title {
+        font-size: 60px;
+        text-decoration: none;
+        margin-top: 23vh;
+        color: white;
+        position: absolute;
+    }
+
+    .content-9 {
+        width: 90%;
+        overflow: hidden;
+        margin-left: 5%;
+        position: relative;
+    }
+    .decu {
+        margin-left: 110px;
+    }
+    .content-sugg {
+        margin-top: 4%;
+        width: 90%;
+        margin-left: 5%;
+        position: relative;
+    }
+    .footer {
+        margin-top: 1500px;
+        position: relative;
+    }
+    .above {
+        width: 100%;
+    }
+    .above .pb {
+        width: 100%;
+    }
+    .below {
+        width: 100%;
+    }
+}
+
