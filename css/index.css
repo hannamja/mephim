@@ -464,6 +464,34 @@ h6#root {
     float: left;
 }
 
+.footer-content {
+    float: left;
+    width: 20%;
+    height: 100%;
+    margin-left: 1%;
+}
+#footer-root {
+    margin-left: 200px;
+}
+.footer-a a {
+    
+    text-decoration: none;
+    color: white;
+    
+}
+.theme {
+    margin-top: 10px;
+    font-size: 25px;
+}
+h3 {
+    margin-top: 10px;
+    color: white;
+}
+h5 {
+    margin-top: 10px;
+    color: white;
+}
+
 @media only screen and (max-width: 700px) {
     #head h3 {
         left: 0px;
